@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install -y wget unzip sqlite php php-{cli,xml,zip,curl,gd,cgi,mysql,mbstring,xmlrpc,recode,mcrypt,tidy,imagick,sqlite3} libterm-readline-gnu-perl  lighttpd 
+sudo apt install -y wget unzip sqlite php php-{cli,xml,zip,curl,gd,cgi,mysql,mbstring,xmlrpc,recode,tidy,imagick,sqlite3} libterm-readline-gnu-perl  lighttpd 
 sudo lighttpd-enable-mod fastcgi 
 sudo lighttpd-enable-mod fastcgi-php
 cd /var/www/html/
