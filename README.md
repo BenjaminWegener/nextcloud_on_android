@@ -6,4 +6,4 @@ script to install nextcloud 23 on android (fitetvcube, nvidia shield, phone etc)
 - ssh opens up automatically, asking for your password
 - paste following code to start:
 
-`sudo apt update -y; sudo apt install wget -y; wget -O - https://githubusercontent.com/BenjaminWegener/nextcloud_on_android/install.sh | bash;`
+`sudo apt update -y; sudo apt install wget -y; wget -O - https://github.com/BenjaminWegener/nextcloud_on_android/raw/main/install.sh | bash;`
