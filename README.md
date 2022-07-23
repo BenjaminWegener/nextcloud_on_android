@@ -6,6 +6,6 @@ script to install nextcloud 23 on android (firetv cube/stick, nvidia shield, pho
 - ssh opens up automatically, asking for your password
 - paste following code to start:
 
-`termux-setup-storage; pkg update -y; pkg install wget sudo -y; wget -O - https://github.com/BenjaminWegener/nextcloud_on_android/raw/main/install.sh | bash;`
+`termux-setup-storage; pkg update -y; pkg install wget -y; wget -O - https://github.com/BenjaminWegener/nextcloud_on_android/raw/termux/install.sh | bash;`
 
 finally open a browser and navigate to http://localhost:8080/nextcloud/ to finish the setup. 
