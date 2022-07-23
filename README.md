@@ -1,5 +1,5 @@
 # nextcloud_on_android
-script to install nextcloud 23 on android (fitetvcube, nvidia shield, phone etc)
+script to install nextcloud 23 on android (firetv cube/stick, nvidia shield, phone etc)
 
 -  install userland from fdroid https://www.f-droid.org/en/packages/tech.ula/
 - inside userland install debian with ssh, set a username and password
