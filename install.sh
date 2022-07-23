@@ -10,3 +10,6 @@ sudo chmod -R 755 /var/www/
 sudo sed -i 's/80/8080/g' /etc/lighttpd/lighttpd.conf
 sudo sed -i 's/localhost:8080/*/g' /var/www/html/nextcloud/config/config.php
 sudo service lighttpd restart
+echo '#!/bin/bash' >> /etc/init.d/nextcloud.sh
+echo 'sudo service lighttpd start' >> /etc/init.d/nextcloud.sh
+sudo update-rc.d nextcloud.sh defaults
