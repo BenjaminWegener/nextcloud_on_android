@@ -2,8 +2,8 @@
 script to install nextcloud 23 on android (fitetvcube, nvidia shield, phone etc)
 
 -  install userland from fdroid https://www.f-droid.org/en/packages/tech.ula/
-- inside userland install debian with ssh
-- ssh opens up on doubleclick
+- inside userland install debian with ssh, set a username and password
+- ssh opens up automatically, asking for your password
 - paste following code to start:
 
-`sudo apt update -y; sudo apt install wget -y; wget -O https://githubusercontent.com/BenjaminWegener/nextcloud_on_android/install.sh | bash;`
+`sudo apt update -y; sudo apt install wget -y; wget -O - https://githubusercontent.com/BenjaminWegener/nextcloud_on_android/install.sh | bash;`
