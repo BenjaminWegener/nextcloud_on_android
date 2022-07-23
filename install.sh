@@ -8,8 +8,9 @@ unzip latest-23.zip
 sudo chown -R www-data:www-data /var/www/
 sudo chmod -R 755 /var/www/
 sudo sed -i 's/80/8080/g' /etc/lighttpd/lighttpd.conf
-sudo sed -i 's/localhost:8080/*/g' /var/www/html/nextcloud/config/config.php
+sudo sed -i 's/localhost:8080/*/g' /var/www/html/nextcloud/config/config.sample.php
 sudo service lighttpd restart
 echo '#!/bin/bash' >> /etc/init.d/nextcloud.sh
 echo 'sudo service lighttpd start' >> /etc/init.d/nextcloud.sh
+sudo chmod +x /etc/init.d/nextcloud.sh
 sudo update-rc.d nextcloud.sh defaults
