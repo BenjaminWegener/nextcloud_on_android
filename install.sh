@@ -9,6 +9,4 @@ sudo chown -R www-data:www-data /var/www/
 sudo chmod -R 755 /var/www/
 sudo sed -i 's/80/8080/g' /etc/lighttpd/lighttpd.conf
 sudo sed -i 's/localhost:8080/*/g' /var/www/html/nextcloud/config/config.php
-sudo service lighttpd stop
-sudo service lighttpd start
-
+sudo service lighttpd restart
