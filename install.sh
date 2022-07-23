@@ -7,7 +7,8 @@ wget --no-check-certificate https://download.nextcloud.com/server/releases/lates
 unzip latest-23.zip
 sudo chown -R www-data:www-data /var/www/
 sudo chmod -R 755 /var/www/
-sudo sed -i 's/= 80/= 8080/g' /etc/lighttpd/lighttpd.conf
-sudo systemctl stop lighttpd.service
-sudo systemctl start lighttpd.service
-sudo systemctl enable lighttpd.service
+sudo sed -i 's/80/8080/g' /etc/lighttpd/lighttpd.conf
+sudo service lighttpd stop
+sudo service lighttpd start
+sudo service lighttpd enable
+
