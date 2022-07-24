@@ -35,6 +35,7 @@ fastcgi.server = ( ".php" => ((
 mkdir -p ./.termux/boot
 echo '
 #!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
 lighttpd -f ~/lighttpd.conf
 ' > ./.termux/boot/start-lighttpd.sh
 lighttpd -f lighttpd.conf
