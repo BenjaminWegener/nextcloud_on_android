@@ -1,5 +1,5 @@
 # nextcloud_on_android
-script to install nextcloud 23 on android (firetv cube/stick, nvidia shield, phone etc)
+script to install nextcloud 24 on android (firetv cube/stick, nvidia shield, phone etc)
 
 - install termux from fdroid https://f-droid.org/en/packages/com.termux/
 - install termux:boot from https://f-droid.org/en/packages/com.termux.boot/ and run it once
