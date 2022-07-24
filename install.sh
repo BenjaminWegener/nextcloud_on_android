@@ -5,7 +5,7 @@ unzip latest-24.zip
 sed -i 's/localhost:8080/*/g' ./nextcloud/config/config.sample.php
 echo '
 server.port             = 8080
-server.document-root    = "~/nextcloud"
+server.document-root    = "/data/data/com.termux/files/home/nextcloud"
 server.upload-dirs      = ( "/data/data/com.termux/files/usr/tmp" )
 index-file.names        = ( "index.html" )
 mimetype.assign = (
@@ -20,11 +20,11 @@ mimetype.assign = (
     "" => "application/octet-stream"
 )
 server.modules = (
+    "mod_auth",
     "mod_access",
     "mod_accesslog",
     "mod_fastcgi",
-    "mod_rewrite",
-    "mod_auth"
+    "mod_rewrite"
 )
 fastcgi.server = ( ".php" => ((
                      "bin-path" => "/data/data/com.termux/files/usr/bin/php-cgi",
