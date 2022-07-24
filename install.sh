@@ -17,6 +17,7 @@ mimetype.assign = (
     ".jpeg" => "image/jpeg",
     ".gif" => "image/gif",
     ".png" => "image/png",
+    ".svg" => "image/svg+xml",
     "" => "application/octet-stream"
 )
 server.modules = (
