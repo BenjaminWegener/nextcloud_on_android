@@ -32,4 +32,9 @@ fastcgi.server = ( ".php" => ((
                      "socket" => "/data/data/com.termux/files/usr/tmp/php.socket"
                  )))
 ' > lighttpd.conf
+mkdir -p ./.termux/boot
+echo '
+#!/data/data/com.termux/files/usr/bin/sh
+lighttpd -f ~/lighttpd.conf
+' > ./.termux/boot/start-lighttpd.sh
 lighttpd -f lighttpd.conf
